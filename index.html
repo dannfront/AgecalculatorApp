@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+
+<body>
+  <!-- Day
+  DD
+
+  Month
+  MM
+
+  Year
+  YYYY
+
+  -- years
+  -- months
+  -- days -->
+
+  <main class="calculator">
+    <header class="calculator__inputs">
+      <div>
+        <label class="calculator__label" for="">Day</label>
+        <input class="inputs input--day" type="number" placeholder="DD" ">
+        <p class="messague">Must be a valid day</p>
+      </div>
+      <div>
+        <label class="calculator__label" for="">Month</label>
+        <input class="inputs input--month" type="number" placeholder="MM" ">
+        <p class="messague">Must be a valid month</p>
+      </div>
+      <div>
+        <label class="calculator__label" for="">Year</label>
+        <input class="inputs input--year" type="number" placeholder="YYYY" ">
+        <p class="messague">Must be in the past</p>
+      </div>
+    </header>
+
+    
+
+    <div class="line">
+      <div class="circule check">
+        <div class="arrow">
+          <svg  class="svg" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <p class="info"> <span class="data data--year">--</span> years</p>
+      <p class="info"> <span class="data data--month">--</span> months</p>
+      <p class="info"> <span class="data data--day">--</span> days</p>
+
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
